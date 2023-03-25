@@ -35,9 +35,9 @@ def generate_frequency_table(text, order):
 
     return frequency_table
 
-def generate_markov_text(frequency_table, seed, length):
+def generate_markov_text(frequency_table, key, length):
     """This function generates text using markov """
-    current_key = seed
+    current_key = key
     result = list(current_key)
     import random
     for _ in range(length):
